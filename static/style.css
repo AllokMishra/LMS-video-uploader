@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0f0f0;
+}
+
+.upload-container {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+}
+
+.upload-card {
+    background: #1e1e1e;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.upload-card:hover {
+    transform: translateY(-4px);
+}
+
+.logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.file-label {
+    display: block;
+    background: #2a2a2a;
+    border: 2px dashed #555;
+    padding: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.file-label:hover {
+    border-color: #2196f3;
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.file-label span {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.file-info {
+    background: #2c2c2c;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #eee;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+.flash {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.flash.success {
+    background-color: #2e7d32;
+    color: #e1f6e9;
+}
+
+.flash.danger {
+    background-color: #c62828;
+    color: #fcebea;
+}
+
+.progress-container {
+    background: #333;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 15px;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+}
